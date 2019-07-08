@@ -13,6 +13,12 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="container">
+
+
+		<div class="row">
+
+
 		<div class="col-md-4">
 
 			<?php
@@ -24,19 +30,21 @@ dynamic_sidebar('footer-sidebar-1');
 		<div class="col-md-4">
 
 			<?php
-if(is_active_sidebar('footer-sidebar-1')){
-dynamic_sidebar('footer-sidebar-1');
+if(is_active_sidebar('footer-sidebar-2')){
+dynamic_sidebar('footer-sidebar-2');
 }
 ?>
 		</div>
 		<div class="col-md-4">
 
 			<?php
-if(is_active_sidebar('footer-sidebar-1')){
-dynamic_sidebar('footer-sidebar-1');
+if(is_active_sidebar('footer-sidebar-3')){
+dynamic_sidebar('footer-sidebar-3');
 }
 ?>
 		</div>
+	</div>
+</div>
 		<div class="site-info container">
 			<div class="attribution">
             	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'bootscores' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'bootscores' ), 'WordPress' ); ?></a>
